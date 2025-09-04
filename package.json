@@ -3,14 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0",
+    "npm": ">=10.0.0"
+  },
   "homepage": "https://nevenasoldat.github.io/apexmetalcrafts",
   "scripts": {
+    "predev": "node --version | grep -q '^v20\\.' || (echo 'Error: Node.js 20.x required. Run: nvm use 20.19.5' && exit 1)",
     "dev": "vite",
+    "prebuild": "node --version | grep -q '^v20\\.' || (echo 'Error: Node.js 20.x required. Run: nvm use 20.19.5' && exit 1)",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "nvm": "nvm use && npm run dev"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",

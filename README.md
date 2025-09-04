@@ -2,6 +2,35 @@
 
 A modern, responsive website for Apex Metal Crafts built with React, TypeScript, Vite, and Tailwind CSS.
 
+## 🔧 Development Setup
+
+**Important: This project requires Node.js 20.19+ to run properly.**
+
+### Quick Start (Recommended)
+```bash
+# Use the automated setup script
+./dev-setup.sh
+```
+
+### Manual Setup
+```bash
+# 1. Switch to correct Node version
+nvm use 20.19.5
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+```
+
+### Node Version Requirements
+- **Required**: Node.js ≥ 20.19.0
+- **Recommended**: Node.js 20.19.5
+- **npm**: ≥ 10.0.0
+
+The project includes automatic Node version checking in npm scripts. If you're using the wrong Node version, you'll see an error message with instructions.
+
 ## Features
 
 - 🏠 Homepage with hero section, about, services, and contact
