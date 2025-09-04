@@ -10,7 +10,7 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/apexmetalcrafts">
       <div className="min-h-screen w-full">
         <Navigation />
         <Routes>
