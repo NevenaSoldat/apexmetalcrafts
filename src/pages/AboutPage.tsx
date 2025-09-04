@@ -1,4 +1,7 @@
 import nemanjaPhoto from '../assets/nemanja.jpeg';
+import puskaPhoto from '../assets/puska.jpeg';
+import vodaPhoto from '../assets/voda.jpeg';
+import vatraPhoto from '../assets/vatra.jpeg';
 
 const AboutPage = () => {
   return (
@@ -46,8 +49,12 @@ const AboutPage = () => {
           {/* Team Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center bg-gray-50 p-8 rounded-lg">
-              <div className="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-3xl">👨‍🔧</span>
+              <div className="mb-4">
+                <img 
+                  src={puskaPhoto} 
+                  alt="Master Fabricator" 
+                  className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-500"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Master Fabricator</h3>
               <p className="text-orange-500 mb-3">Lead Craftsman</p>
@@ -57,8 +64,12 @@ const AboutPage = () => {
             </div>
             
             <div className="text-center bg-gray-50 p-8 rounded-lg">
-              <div className="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-3xl">👩‍💼</span>
+              <div className="mb-4">
+                <img 
+                  src={vodaPhoto} 
+                  alt="Design Director" 
+                  className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-500"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Design Director</h3>
               <p className="text-orange-500 mb-3">Creative Lead</p>
@@ -68,8 +79,12 @@ const AboutPage = () => {
             </div>
             
             <div className="text-center bg-gray-50 p-8 rounded-lg">
-              <div className="w-24 h-24 bg-orange-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-3xl">�‍💻</span>
+              <div className="mb-4">
+                <img 
+                  src={vatraPhoto} 
+                  alt="Project Manager" 
+                  className="w-24 h-24 rounded-full mx-auto object-cover border-4 border-orange-500"
+                />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Project Manager</h3>
               <p className="text-orange-500 mb-3">Operations Lead</p>
