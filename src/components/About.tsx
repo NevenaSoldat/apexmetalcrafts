@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section id="about" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
               Crafting Excellence Since Day One
@@ -62,6 +62,35 @@ const About = () => {
                   Fully licensed and insured
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Meet Our Team Section */}
+        <div className="border-t border-gray-200 pt-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Led by experienced professionals who are passionate about metalcraft and committed to excellence.
+            </p>
+          </div>
+          
+          <div className="flex justify-center">
+            <div className="bg-white rounded-lg shadow-lg p-8 max-w-md text-center">
+              <div className="mb-6">
+                <img 
+                  src="/nemanja.jpeg" 
+                  alt="Nemanja - CEO" 
+                  className="w-32 h-32 rounded-full mx-auto object-cover border-4 border-orange-500"
+                />
+              </div>
+              <h4 className="text-xl font-bold text-gray-900 mb-2">Nemanja</h4>
+              <p className="text-orange-500 font-semibold mb-3">Chief Executive Officer</p>
+              <p className="text-gray-600 leading-relaxed">
+                With over 15 years of experience in the metalworking industry, Nemanja leads our team 
+                with a vision of excellence and innovation. His expertise in both traditional craftsmanship 
+                and modern fabrication techniques ensures every project meets the highest standards.
+              </p>
             </div>
           </div>
         </div>
